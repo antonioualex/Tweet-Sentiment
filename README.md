@@ -28,7 +28,7 @@ In order to proccess our tweet posts we need to:    <ul><li>Replace special toke
 
 >optional ***arguments***: <br>
   &nbsp;&nbsp;&nbsp;&nbsp;  **-h**, **--help**      show this help message and exit <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;  **--precision**     Get the sentiments for each tweet separately if set to True, else for all the tweets at once. Precision default value is set to False.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;  **--precision**     Get the sentiments for each tweet separately if set to True, else for all the tweets at once. Precision &nbsp;&nbsp;&nbsp;&nbsp;default value is set to False.<br>
   &nbsp;&nbsp;&nbsp;&nbsp; **--num-tweets**      Set the number of tweet posts for each API request. Default value is set to 250.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;    **--hashtags**      Comma separated list of hashtags to search for, note that at least one of the hashtags must be contained in a tweet in order to &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be fetched.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;  **--model-file**    The path of the keras model. Root is the current directory.<br>
