@@ -1,16 +1,17 @@
 import argparse
-from datetime import datetime, timedelta
-from timeit import repeat
-import moment
-import pandas as pd
-import keras
-import tweepy
 import json
-import re
+import keras
+import moment
 import os
+import re
+import tweepy
 import time
-from pprint import pprint
+
+import pandas as pd
+
+from datetime import datetime, timedelta
 from nltk.tokenize import TweetTokenizer
+from timeit import repeat
 
 
 class MyStreamListener(tweepy.StreamListener):
