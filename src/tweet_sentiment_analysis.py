@@ -34,18 +34,15 @@ class MyStreamListener(tweepy.StreamListener):
     def on_status(self, tweet):
         if len(self.tweets) < self.num_tweets:
             if ("RT @" not in tweet.text) and (not tweet.retweeted):
-                text = (
-                    tweet.extended_tweet["full_text"]
-                    if hasattr(tweet, "extended_tweet")
-                    else tweet.text
-                )
-                self.tweets.append(
-                    {
-                        "full_text": text,
-                        "created_at": tweet.created_at,
-                        "tweet_id": tweet.id,
-                    }
-                )
+                if hasattr(tweet, "extended_tweet"):
+                    text = tweet.extended_tweet["full_text"]
+                    self.tweets.append(
+                        {
+                            "full_text": text,
+                            "created_at": tweet.created_at,
+                            "tweet_id": tweet.id,
+                        }
+                    )
         else:
             return False
 
